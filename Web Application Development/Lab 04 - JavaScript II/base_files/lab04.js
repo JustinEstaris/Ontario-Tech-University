@@ -10,6 +10,7 @@ window.onload = function() {
 
 //Initializing cell event listeners
 function initializeTableEventListeners(table, rows) {
+
   //Add Column Event Listeners
   var assignmentRow = rows[0].cells;
   for (let columnIndex = 1; columnIndex < assignmentRow.length; columnIndex++) {
@@ -32,9 +33,10 @@ function initializeTableEventListeners(table, rows) {
     let cells = rows[columnIndex].getElementsByTagName("td");
 
     for (let rowIndex = 0; rowIndex < cells.length; rowIndex++) {
-        cells[rowIndex].addEventListener("click", function(event) {
-          cellSelected (rowIndex,cells);
-      });
+        // Click Event Listener
+        cells[rowIndex].addEventListener("click", function(event) {cellSelected (rowIndex,cells)});
+
+
     }
   } 
 };
@@ -42,18 +44,19 @@ function initializeTableEventListeners(table, rows) {
 // Add a CSS class for the entire column when a assignment cell is selected
 function columnSelected(columnIndex, table) {
   for (let rowIndex = 1; rowIndex < table.rows.length; rowIndex++){
-    document.getElementsByTagName("tr")[rowIndex].cells[columnIndex].className = "selected";
+    document.getElementsByTagName("tr")[rowIndex].cells[columnIndex].classList.toggle("selected");
   }
 };
 
 // Add a CSS class for the entire row when a student cell is selected
 function rowSelected(columnIndex, table){
  for (let rowIndex = 1; rowIndex < table.rows.length; rowIndex++){
-        document.getElementsByTagName("tr")[columnIndex].cells[rowIndex].className = "selected";
+        document.getElementsByTagName("tr")[columnIndex].cells[rowIndex].classList.toggle("selected");
     }
 };
 
 // Add a CSS class when a cell is selected
 function cellSelected(rowIndex,cells){
-  cells [rowIndex].style.backgroundColor = "lightBlue";
+  
+  cells [rowIndex].classList.toggle("selected");
 };
