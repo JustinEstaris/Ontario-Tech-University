@@ -41,22 +41,22 @@ function initializeTableEventListeners(table, rows) {
   } 
 };
 
-// Add a CSS class for the entire column when a assignment cell is selected
+// Toggle a CSS class for the entire column when a assignment cell is selected
 function columnSelected(columnIndex, table) {
   for (let rowIndex = 1; rowIndex < table.rows.length; rowIndex++){
     document.getElementsByTagName("tr")[rowIndex].cells[columnIndex].classList.toggle("selected");
   }
 };
 
-// Add a CSS class for the entire row when a student cell is selected
+// Toggle a CSS class for the entire row when a student cell is selected
 function rowSelected(columnIndex, table){
  for (let rowIndex = 1; rowIndex < table.rows.length; rowIndex++){
         document.getElementsByTagName("tr")[columnIndex].cells[rowIndex].classList.toggle("selected");
     }
 };
 
-// Add a CSS class when a cell is selected
+// Toggle a CSS class when a cell is selected
 function cellSelected(rowIndex,cells){
-  
+
   cells [rowIndex].classList.toggle("selected");
 };
