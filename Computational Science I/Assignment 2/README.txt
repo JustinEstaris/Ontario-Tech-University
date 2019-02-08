@@ -1,0 +1,1 @@
+q1d).py is file that answers Question 1 d)
