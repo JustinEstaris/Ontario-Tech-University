@@ -1,0 +1,4 @@
+User02
+add credit
+100
+exit

@@ -1,0 +1,32 @@
+Enter a username to login to the Auction System: 
+Welcome to the Auction System, User01
+
+	    Main Menu  
+	-----------------
+	-    Create     -
+	-    Delete     -
+	-   Advertise   -
+	-      Bid      -
+	-    Refund     -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Enter a username for the new account: 
+Enter an account type: 
+Username Invalid - must be between 1-15 characters
+
+	    Main Menu  
+	-----------------
+	-    Create     -
+	-    Delete     -
+	-   Advertise   -
+	-      Bid      -
+	-    Refund     -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Exited Session.

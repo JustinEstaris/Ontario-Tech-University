@@ -1,0 +1,4 @@
+User01 AA 2000
+User02 FS 100
+User03 BS 0
+User04 SS 0

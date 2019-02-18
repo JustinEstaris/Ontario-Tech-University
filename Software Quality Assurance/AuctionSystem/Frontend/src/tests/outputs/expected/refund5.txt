@@ -1,0 +1,46 @@
+Enter a username to login to the Auction System: 
+Welcome to the Auction System, User01
+
+	    Main Menu  
+	-----------------
+	-    Create     -
+	-    Delete     -
+	-   Advertise   -
+	-      Bid      -
+	-    Refund     -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Enter buyer's username: 
+Enter seller's username: 
+Enter refund amount: 
+Error - amount must be a number.
+	    Main Menu  
+	-----------------
+	-    Create     -
+	-    Delete     -
+	-   Advertise   -
+	-      Bid      -
+	-    Refund     -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Command not recognized or invalid permissions, please try again.
+
+	    Main Menu  
+	-----------------
+	-    Create     -
+	-    Delete     -
+	-   Advertise   -
+	-      Bid      -
+	-    Refund     -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Exited Session.

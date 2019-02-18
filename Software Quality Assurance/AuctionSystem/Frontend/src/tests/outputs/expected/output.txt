@@ -1,0 +1,8 @@
+01 User99 AA 0
+01 123456789ABCDEF AA 0
+03 Computer User01 1 150
+03 Computer User01 30 150
+03 computer User02 30 150
+05 User03 User04 100
+05 User03 User04 -1.46493e+34
+05 User03 User04 -1.07381e+23

@@ -1,0 +1,13 @@
+Enter a username to login to the Auction System: 
+Welcome to the Auction System, User02
+
+	    Main Menu  
+	-----------------
+	-   Advertise   -
+	-      Bid      -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Exited Session.

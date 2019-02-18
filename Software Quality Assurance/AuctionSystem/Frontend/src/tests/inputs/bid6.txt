@@ -1,0 +1,7 @@
+User01
+Bid
+Computer
+6
+User02
+55.50
+exit

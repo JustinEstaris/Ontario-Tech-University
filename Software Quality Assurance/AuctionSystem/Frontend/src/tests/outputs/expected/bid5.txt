@@ -1,0 +1,38 @@
+Enter a username to login to the Auction System: 
+Welcome to the Auction System, User02
+
+	    Main Menu  
+	-----------------
+	-   Advertise   -
+	-      Bid      -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Enter Item Name: 
+Enter number of days to auction: 
+Enter Seller Username: 
+Error - This item does not exist.
+
+	    Main Menu  
+	-----------------
+	-   Advertise   -
+	-      Bid      -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Command not recognized or invalid permissions, please try again.
+
+	    Main Menu  
+	-----------------
+	-   Advertise   -
+	-      Bid      -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Exited Session.

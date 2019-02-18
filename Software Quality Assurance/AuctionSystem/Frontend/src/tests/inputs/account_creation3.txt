@@ -1,0 +1,5 @@
+User01
+create
+123456789ABCDEFG
+AA
+exit

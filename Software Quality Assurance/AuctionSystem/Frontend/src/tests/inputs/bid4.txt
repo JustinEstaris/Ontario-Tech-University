@@ -1,0 +1,6 @@
+User02
+bid
+computer
+50
+User02
+exit

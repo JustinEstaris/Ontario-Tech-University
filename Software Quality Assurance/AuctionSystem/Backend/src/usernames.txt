@@ -1,0 +1,8 @@
+BSTestUser      BS -00400.00
+FSTestUser      FS 080500.00
+SSTestUser      SS 000000.00
+AdminTestUser   AA 999990.00
+TestUser1       SS 000010.00
+TestUser2       FS 010019.00
+TestUser4       SS 000005.00
+TestUser4       SS 000005.00

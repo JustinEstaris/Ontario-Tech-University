@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Eye Tracker - Settings</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="./plugins/bootstrap/dashboard.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">
+                  Home <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./statistics.html"> Statistics </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./settings.html"> Settings </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./team.html"> Team </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            
+          <form style="margin-top:50px;margin-left:50px;">
+            <h3 style="color:#2699FB!important;">Settings</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="full-name" class="settings-label"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control settings"
+                    id="full-name"
+                    aria-describedby="emailHelp"
+                    placeholder="John Doe"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="weight" class="settings-label"
+                    >Current Weight</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control settings"
+                    placeholder="123.5"
+                  />
+                </div>
+              </div>
+              <div class="col-md-1">
+                <p class="settings-help" style="padding-top: 38px;">lbs</p>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label
+                    for="height"
+                    class="settings-label"
+                    style="padding-left:20px;"
+                    >Current Height</label
+                  >
+                  <div class="row">
+                    <div class="col-md-3">
+                      <input
+                        type="text"
+                        class="form-control settings"
+                        placeholder="6"
+                      />
+                    </div>
+                    <div class="col-md-1">
+                      <p class="settings-help" style="padding-top: 9px;">Ft</p>
+                    </div>
+                    <div class="col-md-3">
+                      <input
+                        type="text"
+                        class="form-control settings"
+                        placeholder="1"
+                      />
+                    </div>
+                    <div class="col-md-1">
+                      <p class="settings-help" style="padding-top: 9px;">In</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label for="height" class="settings-label">Health Goals</label>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle dropdown-1"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    style="width:100%; text-align:left;"
+                  >
+                    Choose a Health Goal
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                    style="width:100%;"
+                  >
+                  <a class="dropdown-item" href="#">Eye Health</a>
+                  <a class="dropdown-item" href="#">Back Health</a>
+                  <a class="dropdown-item" href="#">Shoulder Health</a>
+                  <a class="dropdown-item" href="#">Neck Health</a>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="padding-top:20px;">
+              <div class="col">
+                  <button type="submit" class="btn btn-success">Save Changes</button>
+              </div>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

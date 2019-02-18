@@ -1,0 +1,24 @@
+Enter a username to login to the Auction System: 
+Welcome to the Auction System, User04
+
+	    Main Menu  
+	-----------------
+	-   Advertise   -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Enter Item Name: 
+Enter Minimum Bid: 
+Enter Duration of Auction (Days): 
+Error - Auction Duration must be a number
+	    Main Menu  
+	-----------------
+	-   Advertise   -
+	-   Add Credit  -
+	- Display Items -
+	-    Logout     -
+
+Enter a command: 
+Exited Session.

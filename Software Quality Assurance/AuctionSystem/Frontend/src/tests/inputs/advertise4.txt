@@ -1,0 +1,6 @@
+User04
+advertise
+150
+30
+bla
+exit

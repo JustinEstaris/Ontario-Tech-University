@@ -1,0 +1,3 @@
+User02
+create
+exit

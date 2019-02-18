@@ -1,0 +1,6 @@
+User02
+advertise
+computer
+150
+30
+exit

@@ -1,0 +1,2 @@
+Enter a username to login to the Auction System: 
+User User05 not found, please try again.Enter a username to login to the Auction System: 

@@ -1,0 +1,6 @@
+User01
+advertise
+Computer
+150
+\n
+exit

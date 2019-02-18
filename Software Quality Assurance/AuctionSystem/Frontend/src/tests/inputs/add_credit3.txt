@@ -1,0 +1,4 @@
+User01
+add credit
+10
+exit

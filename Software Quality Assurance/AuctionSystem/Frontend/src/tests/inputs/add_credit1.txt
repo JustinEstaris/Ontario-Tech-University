@@ -1,0 +1,5 @@
+User01
+add credit
+1000
+123456789ABCDEF
+exit
