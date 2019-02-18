@@ -13,7 +13,7 @@ data = []
 # =============================================================================
 
 #Loop through the file line by line
-for row in file:
+#for row in file:
 
 
 
