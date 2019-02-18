@@ -1,7 +1,7 @@
 ## Assignment 1 Description
 Purpose of the assignment is to implement a Java Lexer using ANTLR and simulate an NFA diagram using Java Code.
 
-###Table of Contents
+### Table of Contents
 1. Write a Lexer Grammar
 2. NFA Simulation
 
