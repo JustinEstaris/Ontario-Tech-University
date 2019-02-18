@@ -1,4 +1,4 @@
-##Course Description
+## Course Description
 This course covers advanced topics in data process and analytics with special emphasis on Big Data.
 
 Topics of the course will include, but are not limited to the following:
@@ -8,7 +8,7 @@ Topics of the course will include, but are not limited to the following:
 * Scalable machine learning and statistical techniques
 * Trends of modern very large scale data systems
 
-##Learning Outcomes
+## Learning Outcomes
 1.	Understand the unique challenges of processing Big Data at the theoretical and practical level.
 2.	Understand time proven and state of the art algorithms and practices of Big Data processing.
 3.	Learn how a big data system is built. Students will learn the issues involved in designing efficient big data systems, and the strategies, data-structures, and algorithms used in the implementation of such systems.
