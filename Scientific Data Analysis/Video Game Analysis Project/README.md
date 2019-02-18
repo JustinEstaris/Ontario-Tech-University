@@ -8,7 +8,7 @@ We will be using American game reviews to compare with global sales data broken 
 * Do reviewers favour a specific Platform?
 * What games are the greatest of all time (best review and sales).
 
-#Authors
+## Authors
 - [Justin Estaris](https://github.com/JustinEstaris)
 - [Ryan Goulding](https://github.com/RGoulding17) 
 
