@@ -1,62 +1,54 @@
-window.onload = function() {
-    //Select Tables and Rows
-  var table = document.getElementsByTagName("table")[0];
-  var rows = table.rows;
+document.addEventListener("DOMContentLoaded", function(event) {
+  const table = document.getElementsByTagName("table")[0];
+  const rows = table.rows;
 
-  initializeTableEventListeners(table, rows);
+  // COLUMNS
+  rows[0].addEventListener("click", e => {
+    if (e.target.cellIndex !== 0) {
+      resetTable();
+      for (let j = 1; j < table.rows.length; j++)
+        document
+          .getElementsByTagName("tr")
+          [j].cells[e.target.cellIndex].classList.add("selected");
+    }
+  });
+
+  // ROWS
+  document.getElementsByTagName("tbody")[0].addEventListener("click", e => {
+    if (e.target.tagName === "TH" && e.target.parentElement.rowIndex !== 0) {
+      resetTable();
+      for (let j = 1; j < table.rows.length; j++)
+        document
+          .getElementsByTagName("tr")
+          [e.target.parentElement.rowIndex].cells[j].classList.add("selected");
+    }
+  });
+
+  // CELLS
+  document.getElementsByTagName("tbody")[0].addEventListener("click", e => {
+    if (e.target.tagName === "TD") {
+      const current = document.getElementsByTagName("tr")[
+        e.target.parentElement.rowIndex
+      ].cells[e.target.cellIndex];
+      resetTable();
+      current.classList.toggle("selected");
+
+      // Updating cells logic (lab 5)
+      const value = current.innerHTML;
+      current.innerHTML = "<input type='text' value='" + value + "' onkeydown='edit();'/>";
+    }
+  });
+});
 
 
+function edit() {
+  if(event.keyCode == 13){
+    const newVal = event.target.value;
+    event.target.parentElement.innerHTML = newVal;
+  }
 }
 
-//Initializing cell event listeners
-function initializeTableEventListeners(table, rows) {
-
-  //Add Column Event Listeners
-  var assignmentRow = rows[0].cells;
-  for (let columnIndex = 1; columnIndex < assignmentRow.length; columnIndex++) {
-    assignmentRow[columnIndex].addEventListener("click", function(event) {
-      columnSelected(columnIndex, table);
-    });
-  }
-
-  // Add Row Event Listeners
-  for (let columnIndex = 1; columnIndex < rows.length; columnIndex++) {
-    let studentIDRow = rows[columnIndex].getElementsByTagName("th")[0];
-    
-    studentIDRow.addEventListener("click", function(event) {
-      rowSelected(columnIndex, table)
-    });
-  }
-
-  //Add Cell Event Listeners
-  for (let columnIndex = 1; columnIndex < rows.length; columnIndex++) {
-    let cells = rows[columnIndex].getElementsByTagName("td");
-
-    for (let rowIndex = 0; rowIndex < cells.length; rowIndex++) {
-        // Click Event Listener
-        cells[rowIndex].addEventListener("click", function(event) {cellSelected (rowIndex,cells)});
-
-
-    }
-  } 
-};
-
-// Toggle a CSS class for the entire column when a assignment cell is selected
-function columnSelected(columnIndex, table) {
-  for (let rowIndex = 1; rowIndex < table.rows.length; rowIndex++){
-    document.getElementsByTagName("tr")[rowIndex].cells[columnIndex].classList.toggle("selected");
-  }
-};
-
-// Toggle a CSS class for the entire row when a student cell is selected
-function rowSelected(columnIndex, table){
- for (let rowIndex = 1; rowIndex < table.rows.length; rowIndex++){
-        document.getElementsByTagName("tr")[columnIndex].cells[rowIndex].classList.toggle("selected");
-    }
-};
-
-// Toggle a CSS class when a cell is selected
-function cellSelected(rowIndex,cells){
-
-  cells [rowIndex].classList.toggle("selected");
-};
+const resetTable = () =>
+  Array.from(document.querySelectorAll("td")).forEach(td =>
+    td.classList.remove("selected")
+);

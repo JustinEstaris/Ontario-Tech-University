@@ -1,0 +1,63 @@
+h1 {
+  text-align: center;
+}
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 32px;
+}
+table {
+  margin: 5px auto;
+  cursor: pointer;
+}
+.vert {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.hori {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.bottomBlock {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.message {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#again {
+  background-color: #008cba;
+  color: #fff;
+}
+
+.keepScore {
+  font-size: 26px;
+}
+.score {
+  font-weight: bold;
+}
+.player2_score {
+  padding-right: 100px;
+  float: right;
+}
+.player1_score {
+  padding-left: 100px;
+  float: left;
+}

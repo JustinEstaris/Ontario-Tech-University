@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+}
+
+/* HEADER */
+.pageHeader {
+  height:250px;
+  background-color: #000070;
+  width:100%;
+  margin:0;
+  color: #fff;
+}
+
+.logo-wrapper {
+  display: inline-block;
+}
+.logo-wrapper > img {
+  max-width: 150px;
+}
+
+.pageHeader > h1 {
+  font-size: 24pt;
+  display: inline-block;
+  position: relative;
+  top: -50px;
+}
+
+
+/* NAVIGATION */
+.navigation {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.navigation > ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul > li {
+  display: inline-block;
+  width: 130px;
+  height: 30px;
+}
+
+.navigation ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  color:  #f0f0ff;
+}
+
+
+
+/* CONTENT */
+.content {
+  padding: 20px;
+}
+
+.content > div {
+  padding-bottom: 1em;
+}
+
+.header {
+  padding: .2em;
+  padding-left: 1em;
+  background-color:#000070;
+}
+.header h2 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.body {
+  border: 1px solid #000070;
+  background-color: #f0f0ff;
+  padding: 1em;
+}
+
+.body p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* SCHEDULE TABLE */
+table {
+  border: 1px solid #000070;
+  width: 100%;
+}
+
+
+/* OTHER */
+/* table, th, td {
+    border: 1px solid black;
+  }
+
+.date{
+    background-color: cadetblue
+} */

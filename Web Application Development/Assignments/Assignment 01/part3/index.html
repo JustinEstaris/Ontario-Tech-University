@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <table>
+      <tr>
+        <td></td>
+        <td class="vert"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="hori"></td>
+        <td class="vert hori"></td>
+        <td class="hori"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="vert"></td>
+        <td></td>
+      </tr>
+    </table>
+    
+    <div class="bottomBlock">
+      <p class="message">Player 1's turn!</p>
+      <button id="again">Play Again</button>
+      <button id="restart">Restart</button>
+      <span class="keepScore player1_score">Player 1: <span class="score score1">0</span></span>
+      <span class="keepScore player2_score">Player 2: <span class="score score2">0</span></span>
+    </div>
+  </body>
+</html>
+
+<script>
+  window.onload = function() {
+    class Game {
+      constructor(firstPlayer, rows, cells, messageBox) {
+        this.currentPlayer = firstPlayer;
+        this.gameOver = false;
+        this.players = {
+          1: { score: 0, symbol: "X" },
+          2: { score: 0, symbol: "O" }
+        };
+
+        this.output = messageBox;
+        this.output.innerHTML = "Player " + this.currentPlayer + "'s Turn";
+        this.rows = rows;
+        this.cells = cells;
+        this.cells.forEach(cell => (cell.innerHTML = ""));
+
+        cells.forEach(cell => cell.addEventListener("click", this.takeTurn)); // game square click handlers
+      }
+
+      nextRound = () => {
+        this.gameOver = false;
+        this.cells.forEach(cell => (cell.innerHTML = ""));
+        this.output.innerHTML = "Player " + this.currentPlayer + "'s Turn";
+      }
+
+      restart = () => {
+        this.gameOver = false;
+        this.players[1].score = 0;
+        this.players[2].score = 0;
+        this.cells.forEach(cell => (cell.innerHTML = ""));
+        this.output.innerHTML = "Player " + this.currentPlayer + "'s Turn";
+        document.getElementsByClassName("score1")[0].innerHTML = 0;
+        document.getElementsByClassName("score2")[0].innerHTML = 0;
+      };
+
+      scanRows = () => {
+        const matchSymbol = this.players[this.currentPlayer].symbol;
+        this.rows.forEach(row => {
+          let count = 0; // Keep track of # of symbols in a row
+          for (let i = 0, cell; (cell = row.cells[i]); i++) {
+            if (cell.innerHTML === matchSymbol) count++;
+          }
+          if (count === 3) this.gameOver = true; //If count is 3 then we have a full row
+        });
+      };
+
+      scanCols = () => {
+        const matchSymbol = this.players[this.currentPlayer].symbol;
+        for (let i = 0; i < 3; i++) {
+          let count = 0;
+          this.rows.forEach(row => {
+            if (row.cells[i].innerHTML === matchSymbol) count++;
+          });
+          if (count === 3) this.gameOver = true; //If count is 3 then we have a full column
+        }
+      };
+
+      scanDiag = () => {
+        const matchSymbol = this.players[this.currentPlayer].symbol;
+        // If center cell then check corners
+        if (this.rows[1].cells[1].innerHTML === matchSymbol) {
+          // Check Top Left to Bottom Right
+          if (
+            this.rows[0].cells[0].innerHTML === matchSymbol &&
+            this.rows[2].cells[2].innerHTML === matchSymbol
+          )
+            this.gameOver = true;
+          // Check Top Right to Bottom Left
+          else if (
+            this.rows[0].cells[2].innerHTML === matchSymbol &&
+            this.rows[2].cells[0].innerHTML === matchSymbol
+          )
+            this.gameOver = true;
+        }
+      };
+
+      declareWinner = winner => {
+        if (winner) {
+          this.output.innerHTML = "Player " + winner + " Wins!";
+          this.players[winner].score += 1;
+          document.getElementsByClassName("score" + winner)[0].innerHTML = this.players[winner].score;
+        } else {
+          this.output.innerHTML = "Draw!";
+        }
+      };
+
+      takeTurn = e => {
+        if (!this.gameOver) {
+          if (e.target.innerHTML === "") {
+            // Check if the player can play on this space
+            // Place the current players symbol on the board
+            e.target.innerHTML = this.players[this.currentPlayer].symbol;
+
+            // Check board to see if current player has won the game
+            this.scanRows(); // Search rows
+            this.scanCols(); // Search columns
+            this.scanDiag(); // Search diagonals
+
+            // Check if board is full and game is not over
+            let count = 0;
+            this.cells.forEach(cell => {
+              if (cell.innerHTML !== "") count++;
+            });
+
+            if (count === 9) {
+              this.gameOver = true;
+              this.declareWinner(null);
+            } else {
+              if (this.gameOver) this.declareWinner(this.currentPlayer);
+              else {
+                this.currentPlayer = this.currentPlayer === 1 ? 2 : 1; // switch current player
+                this.output.innerHTML = "Player " + this.currentPlayer + "'s Turn";
+              } 
+            }
+          }
+        }
+      };
+    }
+
+    // Initializations on load
+    const message = document.getElementsByClassName("message")[0]; // Get message container
+    const rows = document.querySelectorAll("tr");
+    const cells = document.querySelectorAll("td");
+    const game = new Game(1, rows, cells, message);
+
+    document.getElementById("restart").addEventListener("click", game.restart); // restart game
+    document.getElementById("again").addEventListener("click", game.nextRound); // restart game
+  };
+</script>
