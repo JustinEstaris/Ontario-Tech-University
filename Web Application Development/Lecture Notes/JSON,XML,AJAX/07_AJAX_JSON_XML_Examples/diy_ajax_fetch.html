@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DIY AJAX Examples with Fetch</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles/main.css">
+		<script type="text/javascript" src="scripts/diy_ajax_fetch.js"></script>
+	</head>
+	<body>
+    <!-- used for the plaintext example -->
+		<div class="container">
+			<div class="col-sm-10 spaced">
+				<h2>Plain text:</h2>
+	    	<div id="plainTextDiv" class="output"></div>
+	      <button id="plainTextButton" type="button" class="input-lg btn btn-info btn-lg">Load</button>
+			</div>
+		</div>
+
+    <!-- used for the CSV example -->
+		<div class="container spaced">
+			<div class="col-sm-10 spaced">
+				<h2>Comma-separated values (CSV):</h2>
+			</div>
+			<div class="col-sm-10 spaced">
+				<label class="col-sm-2 control-label">First name:</label>
+			  <input class="form-control" id="csvFirstName" type="text">
+			</div>
+			<div class="col-sm-10 spaced">
+				<label class="col-sm-2 control-label">Last name:</label>
+			  <input class="form-control" id="csvLastName" type="text">
+			</div>
+			<div class="col-sm-10 spaced">
+				<button id="csvButton" type="button" class="input-lg btn btn-info btn-lg">Load</button>
+			</div>
+		</div>
+
+    <!-- used for the JSON example -->
+		<div class="container spaced">
+			<div class="col-sm-10 spaced">
+				<h2>JavaScript object notation (JSON):</h2>
+			</div>
+			<div class="col-sm-10 spaced">
+				<label class="col-sm-2 control-label">First name:</label>
+			  <input class="form-control" id="jsonFirstName" type="text">
+			</div>
+			<div class="col-sm-10 spaced">
+				<label class="col-sm-2 control-label">Last name:</label>
+			  <input class="form-control" id="jsonLastName" type="text">
+			</div>
+			<div class="col-sm-10 spaced">
+				<button id="jsonButton" type="button" class="input-lg btn btn-info btn-lg">Load</button>
+			</div>
+		</div>
+
+      <!-- used for the XML example -->
+			<div class="container spaced">
+				<div class="col-sm-10 spaced">
+					<h2>eXtensible Markup Language (XML):</h2>
+				</div>
+				<div class="col-sm-10 spaced">
+					<label class="col-sm-2 control-label">First name:</label>
+				  <input class="form-control" id="xmlFirstName" type="text">
+				</div>
+				<div class="col-sm-10 spaced">
+					<label class="col-sm-2 control-label">Last name:</label>
+				  <input class="form-control" id="xmlLastName" type="text">
+				</div>
+				<div class="col-sm-10 spaced">
+					<button id="xmlButton" type="button" class="input-lg btn btn-info btn-lg">Load</button>
+				</div>
+			</div>
+	</body>
+</html>

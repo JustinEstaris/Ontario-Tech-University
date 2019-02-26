@@ -1,0 +1,11 @@
+.output {
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+    color: #cdbfe3;
+    text-align: center;
+    background-color: #563d7c;
+}
+
+.spaced {
+  margin-top: 2rem;
+}
