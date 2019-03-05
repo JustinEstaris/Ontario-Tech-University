@@ -1,3 +1,4 @@
+//Like Lab 5 but with more jQuery 
 $(document).ready(() => {
     $("table th").click(function() {
         $("td").removeClass("selected");
@@ -23,7 +24,7 @@ $(document).ready(() => {
         $("td").removeClass("selected");
         $(this).addClass("selected");
     
-        // Edit
+        // Edit Values
         const value = $(this).text();
         $(this).html("<input type='text' value='" + value + "' onkeydown='edit();'/>");
         $("input").focus();
