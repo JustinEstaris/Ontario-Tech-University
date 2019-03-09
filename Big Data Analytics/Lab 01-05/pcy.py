@@ -13,7 +13,9 @@ support = 2
 
 candidateList = {}
 frequentList = []
+
 hashTable = {}
+
 bitMap = {}
 
 
@@ -38,7 +40,7 @@ for basket in baskets:
             # Create Entry with a starting value of 1
             candidateList[item] = 1
     
-#Iterate over each basket
+#Hash Each pair with Python's built-in hash-function
     #Get pairs for each basket
     pairs = (combinations(basket,2))
     for pair in pairs:
@@ -52,17 +54,6 @@ for basket in baskets:
             hashTable[hashedPair] = 1 # Add a new entry with a value of 1
         
         
-# Read each Dictionary entry
-# =============================================================================
-# for key,value in candidateList.items():
-#     #If value isn't greater than the support
-#     if value >= support:
-#         # Add item to the frequent list
-#         frequentList[key] = value
-# =============================================================================
-
-
-
 
 #Convert Hashtable to Bit Map
 for key,value in hashTable.items():

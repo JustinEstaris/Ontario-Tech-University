@@ -16,7 +16,7 @@ import time
 start_time = time.time()
 #List of baskets
 baskets = []
-support = 50
+support = 850
 sampleSize = 1000
 
 candidateList = {}

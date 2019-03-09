@@ -5,6 +5,7 @@
 """
 from itertools import combinations
 import time
+import collections
 
 start_time = time.time()
 #List of baskets
