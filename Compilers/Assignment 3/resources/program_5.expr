@@ -1,0 +1,5 @@
+let pi = 3.1415
+let r = 10
+let area = pi * r^2
+print "radius is" r
+print "area is" area

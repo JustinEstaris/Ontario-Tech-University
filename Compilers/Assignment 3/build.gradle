@@ -1,0 +1,42 @@
+plugins {
+    id 'antlr'
+    id 'application'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    antlr 'org.antlr:antlr4:4.7.2'
+    compile 'junit:junit:4.12'
+    testCompile 'junit:junit:4.12'
+
+}
+
+application {
+    mainClassName = 'Main'
+}
+
+test {
+    workingDir = './resources'
+}
+
+task tree (type:JavaExec){
+	classpath = project.getConfigurations().getByName(AntlrPlugin.ANTLR_CONFIGURATION_NAME) + sourceSets.main.runtimeClasspath
+	main = 'org.antlr.v4.gui.TestRig'
+	
+	def grammarName = "Program"			
+	args = [grammarName, 'program', '-gui', "test.expr"]
+}
+
+task tokens (type:JavaExec){
+	classpath = project.getConfigurations().getByName(AntlrPlugin.ANTLR_CONFIGURATION_NAME) + sourceSets.main.runtimeClasspath
+	main = 'org.antlr.v4.gui.TestRig'
+	
+	def grammarName = "Program"			
+	args = [grammarName, 'tokens', "-tokens", "test.expr"]
+}
+
+apply plugin: 'java'

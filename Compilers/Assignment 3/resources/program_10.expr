@@ -1,0 +1,16 @@
+let i = 0
+let count = 0
+while (i < 100) {
+  let i = i + 1
+  let j = 0
+  while (j < 100) {
+    let j = j + 1
+    if 2*i/3 - 3.5*j == 4.5*j {
+      print "solution for 2*i/3 - 3.5*j == 4.5*j found:" i:0 j:0
+      let count = count + 1
+    }
+  }
+}
+
+print "Total number of solutions:" count:0
+

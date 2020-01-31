@@ -1,0 +1,5 @@
+let i = 0
+while (i < 5) {
+  let i = i + 1
+  print 10^i
+}
