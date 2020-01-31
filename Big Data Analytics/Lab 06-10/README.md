@@ -26,7 +26,7 @@ These labs use several datasets
 |Lab 2 | Use classification algorithms on the monks-3 dataset and report the classification accuracy and confusion matrix |<ul><li>C4.5</li><li>Id3</li><li>RIPPER</li><li>k-Nearest Neighbor</li><li>Naive Bayesian Classification</li><li>Neural Networks</li></ul> |
 |Lab 3 | Using the Credit Card Application Approval data split the dataset into a training set (70%) and a test set (30%) and use algorithms to create a classification model |<ul><li>C4.5</li><li>Naive</li><li>Neural Networks</li></ul> |
 |Lab 4 | Conduct a 10-fold cross validation on the following datasets <ul><li>Ecoli database</li><li>Glass Identification Database</li><li>Image Segmentation Database</li></ul>  |<ul><li>C4.5</li><li>RIPPER</li><li>Naive Bayesian Classification</li><li>k-Nearest Neighbor</li><li>Neural Networks</li></ul> |
-|Lab 5 | Detailed Results of Labs 1 - 4 |Final Report |
+|Lab 5 | Detailed Results of Labs 1 - 4 | N/A |
 
 
 ## Algorithm Description
