@@ -29,18 +29,18 @@ These labs use several datasets
 |Lab 5 | Detailed Results of Labs 1 - 4 |Final Report |
 
 
-### Algorithm Description
-## J.48 (C.45) Algorithm
+## Algorithm Description
+### J.48 (C.45) Algorithm
 The J48 Algorithm (C4.5 algorithm) generates a pruned or unpruned decision tree classifier  that’s authored by Ross Quinlan. The Decision Tree is made by using a set of data used specifically for training. Based, on the data it will create a decision tree using information entropy similar to the ID3 (Iterative Dichotomiser 3) Algorithm. 
 
-## JRIP Algorithm 
+### JRIP Algorithm 
 The JRIP Algorithm (RIPPER Algorithm) is a supervised rule learning algorithm. It’s an optimized version of IREP++. Since JRIP is an optimized version of IREP++ it inherits its learning concept known as the propositional rule learner. In essence, the proposition rule learning concept will develop an algorithm strictly for the set of positive examples and no negative examples. The JRIP algorithm goes through several stages which is listed below:
 
-## IBk Algorithm
+### IBk Algorithm
 The IBk algorithm is a K-nearest neighbor classifier that selects the appropriate value of K using cross-validation. The algorithm is used for classification and regression and is a lazy learning algorithm. This means that it will approximate our function and will delay its computation until classification.
 
-## NaïveBayes Algorithm
+### NaïveBayes Algorithm
 The NaïveBayes algorithm is a simple probabilistic classifier. This means that the algorithm is classifying the inputs. The algorithm uses probability to filter such input. It makes use of Bayes’ Theorem which adjusts the probability for each event as new input is entered the algorithm.
 
-## Multilater Perceptron Algorithm
+### Multilater Perceptron Algorithm
 The Multilayer Perceptron (MLP) is a supervised learning algorithm that uses a technique known as backpropagation for training. It uses backpropagation to calculate the weights to be used in the function and is used to distinguish data that is unable to be separable linearly. 
